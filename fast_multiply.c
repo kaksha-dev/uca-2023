@@ -70,6 +70,9 @@ char* add_bit_strings(char* x, char* y)
         carry = 1;
         temp = temp%2;
       }
+      else {
+        carry = 0;
+      }
       result[n] = temp+'0';
       n--;
   }
@@ -156,7 +159,8 @@ int main()
   assert(fast_multiply("1", "1010")==10); 
   assert(fast_multiply("0", "1010")==00); 
   assert(fast_multiply("111", "111")==49); 
-  assert(fast_multiply("11", "11")==9); 
+  assert(fast_multiply("11", "11")==9);
+  assert(fast_multiply("11", "101")==15); 
 
   return 0;
 }
