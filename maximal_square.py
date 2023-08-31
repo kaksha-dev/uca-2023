@@ -51,7 +51,7 @@ def maximal_square(matrix):
 
     return max_square*max_square
 
-# Test Cases.
+# 3 Test Cases.
 assert maximal_square(
     [["1","0","1","0","0"],
      ["1","0","1","1","1"],
